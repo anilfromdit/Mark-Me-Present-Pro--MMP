@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MMPPro" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/blueish</item>
+        <item name="myBottomNavBar">@color/black</item>
+        <item name="android:iconTint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name = "myTextView">@drawable/dark_text_view</item>
+        <item name="aboutUsSectionIconsTint">@color/white</item>
+        <item name="aboutUsSectionText">@color/lightGrey</item>
+
+
+
+    </style>
+
+</resources>

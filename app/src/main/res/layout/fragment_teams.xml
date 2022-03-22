@@ -1,0 +1,44 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.TeamsFragment"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teamsRcv"
+    android:background="#0000"
+    android:layout_marginBottom="60dp"
+
+
+    >
+</androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Currently You're Not In Any Team"
+            android:textSize="20dp"
+            android:textColor="?android:attr/textColor"
+            android:layout_margin="40dp"
+            android:id="@+id/noTeam"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

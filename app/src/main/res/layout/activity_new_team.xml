@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTeam"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/classTv"
+        />
+
+    <EditText
+        android:id="@+id/classEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classTv"
+        android:background="@drawable/round_edit_text"
+        android:hint="Enter Team Name"
+        android:padding="20dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+    <TextView
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Attendees"
+    android:textSize="20dp"
+    android:textStyle="bold"
+        android:layout_below="@id/classEt"
+    android:id="@+id/attendeesTv"
+    />
+    <EditText
+        android:background="@drawable/round_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:id="@+id/attendeesEt"
+        android:layout_below="@id/attendeesTv"
+        android:hint="Enter Unique ID (separated by comma)"
+
+        />
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?myTextView"
+        android:layout_below="@id/attendeesEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Create Team"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:id="@+id/createTeam"
+        />
+
+</RelativeLayout>

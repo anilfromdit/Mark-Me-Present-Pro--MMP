@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:keepScreenOn="true"
+    tools:context=".IdAttendanceActivity"
+    android:id="@+id/my_rel"
+    >
+
+    <EditText
+        android:id="@+id/mmp_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColorHint="@color/grey"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="Enter ID"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textSize="16sp" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColorHint="@color/grey"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:background="@drawable/round_edit_text"
+        android:hint="Enter Password"
+        android:layout_below="@id/mmp_id"
+        android:id="@+id/mmp_pass"
+        />
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mmp_pass"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:background="@drawable/round_btn"
+        android:layout_marginTop="20dp"
+        android:text="Start"
+        android:id="@+id/start_btn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="256sp"
+        android:text="0"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/count"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count"
+        android:layout_centerHorizontal="true"
+        android:text="Attendee(s)"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:id="@+id/a_txt"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Click On Counter To Download Attendee(s) List"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:id="@+id/download_atn_list"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+
+        />
+
+
+
+
+
+</RelativeLayout>

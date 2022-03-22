@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="?android:attr/windowBackground"
+    tools:context="fragments.ReportsFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/reportRecycle"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="No Reports yet"
+    android:textSize="24dp"
+    android:textColor="?android:attr/textColor"
+    android:layout_margin="40dp"
+    android:id="@+id/noReport"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textAlignment="center"
+
+    />
+</LinearLayout>
+</ScrollView>

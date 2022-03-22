@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="myBottomNavBar" format="color"/>
+    <attr name="aboutUsSectionIconsTint" format="color"/>
+    <attr name="aboutUsSectionText" format="color"/>
+    <attr name="myTextView" format="reference"/>
+    <!-- other attributes go here-->
+</resources>

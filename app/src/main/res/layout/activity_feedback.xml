@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:maxHeight="150dp"
+            android:background="@drawable/round_edit_text"
+            android:id="@+id/feedbackET"
+            android:hint="Please share your experience with us"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/grey"
+            android:paddingRight="10dp"
+            />
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_btn"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:id="@+id/submit_feedback"
+            />
+    </LinearLayout>
+
+</ScrollView>

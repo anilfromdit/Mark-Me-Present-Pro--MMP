@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myYellow"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/frgCnt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:visibility="gone"
+        android:id="@+id/mmpScan"
+        android:background="@drawable/round_btn"
+    android:layout_alignBottom="@id/myCL"
+        android:text="Scan QR "
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        />
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:id="@+id/mmpID"
+        android:text="Using ID"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@drawable/round_btn"
+        android:layout_alignBottom="@id/myCL"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        />
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myCL"
+    >
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/btmBar"
+        app:maxImageSize="40dp"
+        android:src="@drawable/ic_handraised"
+        android:backgroundTint="@color/white"
+        android:id="@+id/MarkAttendance"
+        />
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="?myBottomNavBar"
+        android:id="@+id/btmBar"
+        app:fabCradleRoundedCornerRadius="60dp"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btmNavBar"
+            android:backgroundTint="?myBottomNavBar"
+            app:menu="@menu/btm_nav_menu"
+            app:itemTextColor="?android:attr/textColor"
+            app:itemIconTint="?android:attr/iconTint"
+
+            />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

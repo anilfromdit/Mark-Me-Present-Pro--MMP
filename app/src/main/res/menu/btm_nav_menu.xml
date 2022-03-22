@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Account Setting"
+        android:id="@+id/myAccount"
+        android:icon="@drawable/ic_account"
+        />
+    <item android:title="Reports"
+        android:id="@+id/myReports"
+        android:icon="@drawable/ic_alert"
+        />
+
+
+    <item
+        android:title=" "
+        android:enabled="false"
+        />
+    <item android:title="Teams"
+        android:id="@+id/myTeams"
+        android:icon="@drawable/ic_team"
+        />
+    <item
+    android:title="More"
+    android:id="@+id/myApp"
+    android:icon="@drawable/ic_more"
+    />
+
+</menu>

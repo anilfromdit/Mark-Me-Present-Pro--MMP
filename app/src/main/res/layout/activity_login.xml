@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="@color/tealStormCloud"
+            app:civ_border_width="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textColor="?android:attr/textColor"
+            android:id="@+id/emailTV"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/emailTV"
+            android:background="@drawable/round_edit_text"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="  Enter Your Email"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="?android:attr/textColor"
+            android:textSize="20dp"
+            android:id="@+id/PasswordTV"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:layout_below="@id/PasswordTV"
+            android:layout_gravity="center"
+            android:background="@drawable/round_edit_text"
+            android:drawableLeft="@drawable/ic_lock"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/ic_arrow_forward_"
+            android:drawableTint="@color/white"
+            android:padding="20dp"
+            android:text="Login "
+android:maxLines="1"
+            android:textAllCaps="false"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_btn"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#063970"
+            android:id="@+id/loginBtn"
+
+            />
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtn"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            android:text="Forgot Password?"
+            android:textColor="?android:attr/textColor"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/signUpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotPass"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:textColor="?android:attr/textColor"
+            android:padding="7dp"
+            android:text="No Account Yet?\nSign Up"
+            android:textStyle="bold" />
+
+
+        <android.widget.Button
+            android:id="@+id/newBind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpTxt"
+            android:layout_centerHorizontal="true"
+            android:text="Bind account to this device"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:backgroundTint="#8A0707"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:background="@drawable/round_btn"
+            android:textSize="16dp"
+
+            />
+    </RelativeLayout>
+</ScrollView>
